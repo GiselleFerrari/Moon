@@ -32,7 +32,7 @@ header {
 }
 
 .buscador {
-    background-color: rgba(193, 173, 149, 0.8);
+    background-color: #EDDACA;
     padding: 5px;
     margin: auto;
     border-radius: 0 6px 6px 0;
@@ -61,9 +61,9 @@ header {
 .encabezado {
     display: flex;
     justify-content: center;
-    background-color: rgba(193, 173, 149, 0.8);
+    background-color: #EDDACA;
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -83,7 +83,7 @@ nav li {
 }
 
 nav a {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     display: block;
     padding: 0 3.093em;
     text-decoration: none;
@@ -91,13 +91,14 @@ nav a {
 }
 
 nav a:hover {
+    color: white;
     background: rgba(0,0,0,.5);
     border-radius: 30px;
 }
 
 /* PRIMER NIVEL - Se aplican solamente a los Item*/
 .menu {
-    background: rgba(193, 173, 149, 0.8);
+    background:#EDDACA;
     display: table;
     width: 100%;
     margin: auto;
@@ -117,6 +118,10 @@ nav li li {
     overflow: hidden;
     transition: all .6s;
     width: 200px;
+}
+
+nav li li a {
+    color: white;
 }
 
 nav li:hover >ul > li {
@@ -201,7 +206,7 @@ nav li li li {
 /* Abro TARJETAS */
 
 .tarjetas {
-    max-width: 1000px;
+    max-width: 1280px;
     margin: 50px auto;
     display: flex;
     flex-direction: row;
@@ -422,7 +427,7 @@ figure .trasera p {
 }
 
 .box .content p {
-    font-size: 14px;
+    font-size: 16.1px;
     text-align: justify;
 }
 
@@ -484,6 +489,7 @@ figure .trasera p {
 }
 
 .four .text, .four .msg {
+    display: block;
     font-size: 18px;
     margin-bottom: 2px;
     color: rgb(0, 0, 0);
@@ -501,6 +507,10 @@ figure .trasera p {
     color: rgb(0, 0, 0);
     border: 1px solid #222222;
     transition: .4s;
+}
+
+textarea {
+    width: 95%;
 }
 
 .four button {
